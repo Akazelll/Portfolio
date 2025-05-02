@@ -6,7 +6,8 @@ import Navbar from "./Navbar";
 import Main from "./Main";
 import Footer from "./Footer";
 import { useProjectContext } from "../context/ProjectContext";
-import ProjectPage from "./ProjectPage";
+import ProjectPage from './ProjectPage';
+
 
 const Portfolio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

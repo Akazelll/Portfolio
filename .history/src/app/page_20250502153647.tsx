@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import ContactForm from "./ContactForm";
+import ContactForm from "./ContactForm;
 import Navbar from "./Navbar";
 import Main from "./Main";
 import Footer from "./Footer";
