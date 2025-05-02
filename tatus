@@ -1,0 +1,24 @@
+[33mcommit 58221f00653c6e91cd8a6ea95dc9c892ac061922[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 61a8093 fc900c3
+Author: Adam Raga <adamxraga@gmail.com>
+Date:   Fri May 2 14:36:08 2025 +0700
+
+    Merge branch 'recover-branch'
+
+[33mcommit fc900c32a0f025a1c674a3882491e15860f2dfea[m[33m ([m[1;32mrecover-branch[m[33m)[m
+Author: Adam Raga <adamxraga@gmail.com>
+Date:   Fri May 2 14:25:27 2025 +0700
+
+    Mengembalikan file yang hilang
+
+[33mcommit 61a80931f543baf77c93658c2cb9271fe90641f1[m
+Author: Adam Raga <adamxraga@gmail.com>
+Date:   Fri May 2 14:20:34 2025 +0700
+
+    Menambahkan semua file proyek
+
+[33mcommit b2fb83625b8566720d6953b220214a232151cc24[m
+Author: Adam Raga <adamxraga@gmail.com>
+Date:   Thu May 1 10:49:28 2025 +0700
+
+    Initial commit from Create Next App
