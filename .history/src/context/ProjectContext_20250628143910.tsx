@@ -35,7 +35,7 @@ export const ProjectProvider = ({ children }: { children: ReactNode }) => {
       id: 2,
       title: "DigiPustaka",
       description:
-      "DigiPustaka is a full-featured, modern web application designed to efficiently manage the operations of a digital library. Built on the latest Laravel 11 framework and styled with Tailwind CSS, it provides a robust, secure, and user-friendly platform for both administrators and regular users. The application handles everything from book and publisher management to tracking loan transactions, all within a responsive and aesthetically pleasing interface.",
+      "This project is focused on building a device to measure free fall motion effectively and efficiently for educational purposes.",
       imageUrl: "/images/Screenshot 2025-06-28 141635.png",
       link: "https://github.com/Akazelll/DigitalLibrary",
     },

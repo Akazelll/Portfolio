@@ -2,7 +2,7 @@
 
 import React, { createContext, useState, ReactNode, useContext } from "react";
 
-
+// Define the Project type
 export interface Project {
   id: number;
   title: string;
@@ -28,16 +28,16 @@ export const ProjectProvider = ({ children }: { children: ReactNode }) => {
       title: "Form Recruitment",
       description:
         "The Form Recruitment Project is a project to participate in the active recruitment of HMTI Udinus in the Science and Technology Sector through an efficient online registration system. Prospective members can fill out a registration form containing personal data such as name, age, gender, semester, email, which is then stored in a MySQL database after being validated. In addition, this system is equipped with CRUD (Create, Read, Update, Delete) features, allowing administrators to easily manage applicant data through the admin panel, including adding, viewing, updating, or deleting data as needed. This project simplifies the management of member registration and increases efficiency in the recruitment process.",
-      imageUrl: "/images/project1.webp",
+      imageUrl: "https://akazellapp.netlify.app/img/project1.png",
       link: "https://github.com/Akazelll/FormRecruitment",
     },
     {
       id: 2,
       title: "DigiPustaka",
       description:
-      "DigiPustaka is a full-featured, modern web application designed to efficiently manage the operations of a digital library. Built on the latest Laravel 11 framework and styled with Tailwind CSS, it provides a robust, secure, and user-friendly platform for both administrators and regular users. The application handles everything from book and publisher management to tracking loan transactions, all within a responsive and aesthetically pleasing interface.",
-      imageUrl: "/images/Screenshot 2025-06-28 141635.png",
-      link: "https://github.com/Akazelll/DigitalLibrary",
+      "This project is focused on building a device to measure free fall motion effectively and efficiently for educational purposes.",
+      imageUrl: "https://akazellapp.netlify.app/img/project2.png",
+      link: "",
     },
     {
       id: 3,
@@ -60,7 +60,7 @@ export const ProjectProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-
+// Hook to use the project context
 export const useProjectContext = () => {
   const context = useContext(ProjectContext);
   if (!context) {
