@@ -1,50 +1,44 @@
 "use client";
 
-import React, { useRef } from "react";
-import Swal from "sweetalert2";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_8lba1ii",
-          "template_wbrq5zo",
-          form.current,
-          "ESLM0zU2Vq1PrPMkw"
-        )
-        .then(
-          () => {
-            Swal.fire({
-              title: "Success!",
-              text: "Email sent successfully!",
-              icon: "success",
-              confirmButtonText: "OK",
-              customClass: {
-                confirmButton: "bg-blue-600 text-white px-4 py-2 rounded-lg",
-              },
-            });
-            // Gunakan operator non-null assertion untuk memberi tahu TypeScript bahwa form.current tidak null
-            form.current!.reset();  // Reset form setelah pengiriman sukses
-          },
-          (error) => {
-            Swal.fire({
-              title: "Error!",
-              text: "Failed to send email. Please try again.",
-              icon: "error",
-              confirmButtonText: "OK",
-              customClass: {
-                confirmButton: "bg-red-600 text-white px-4 py-2 rounded-lg",
-              },
-            });
-            console.error(error.text);
-          }
-        );
+    if (!form.current) return;
+
+    setLoading(true);
+
+    try {
+      await emailjs.sendForm(
+        "service_8lba1ii",
+        "template_wbrq5zo",
+        form.current,
+        "ESLM0zU2Vq1PrPMkw"
+      );
+
+      toast({
+        title: "Email Sent",
+        description: "Your message has been sent successfully!",
+        variant: "default",
+      });
+
+      form.current.reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -82,9 +76,10 @@ const ContactForm: React.FC = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700"
+          className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
+          disabled={loading}
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
     </section>
