@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
         transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
       >
         Hi! I&apos;m a passionate developer skilled in creating modern and
-        responsive websites. I specialize in NextJS, React,Tailwind
+        responsive websites. I specialize in TypeScript, React,Tailwind
         CSS, Laravel and MySQL.
       </motion.p>
 

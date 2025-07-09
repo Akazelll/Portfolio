@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Main = () => {
   return (
     <main className="flex-grow relative isolate px-6 pt-24 lg:px-8 max-w-7xl mx-auto">
+      {/* Background decorative elements */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
