@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Form Recruitment",
+    "description": "The Form Recruitment Project is a project to participate in the active recruitment of HMTI Udinus in the Science and Technology Sector through an efficient online registration system...",
+    "image": "/images/project1.webp",
+    "technologies": ["PHP", "MySQL", "HTML", "CSS"],
+    "liveLink": "#",
+    "repoLink": "https://github.com/Akazelll/FormRecruitment"
+  },
+  {
+    "id": 2,
+    "title": "DigiPustaka",
+    "description": "DigiPustaka is a full-featured, modern web application designed to efficiently manage the operations of a digital library...",
+    "image": "/images/Screenshot 2025-06-28 141635.png",
+    "technologies": ["Laravel 11", "Tailwind CSS", "MySQL"],
+    "liveLink": "#",
+    "repoLink": "https://github.com/Akazelll/DigitalLibrary"
+  },
+  {
+    "id": 3,
+    "title": "Ecotrack",
+    "description": "Ecotrack is a smart solution for tracking environmental data, focusing on waste management and sustainability.",
+    "image": "https://akazellapp.netlify.app/img/project3.png",
+    "technologies": ["React", "Node.js", "MongoDB"],
+    "liveLink": "https://akazellapp.netlify.app/",
+    "repoLink": "#"
+  }
+]
